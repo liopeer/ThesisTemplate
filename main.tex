@@ -89,48 +89,44 @@
 \author{Lionel Peer}
 \subject{Semester Thesis}
 \date{Fall Semester 2023}
-\publishers{Institute for Biomedical Engineering, ETH Zürich, Switzerland  \\ 
+\publishers{Institute for Biomedical Engineering, ETH Zürich, Switzerland  \\
     \bigskip Supervision: Prof. Dr. Ender Konukoglu\\ Advisor: Dr. Maxim Polikarpov}
 \titlehead{Lionel Peer\\ Wasenstrasse 24\\ 8280 Kreuzlingen}
 \begin{document}
-	
-	\frontmatter
-	
-	%\includepdf{img/titlepage_black.pdf}
-    \maketitle
-	
-	\chapter*{}
-	\thispagestyle{empty}
-	\vspace{-6cm}
-	\vfill
-	\begin{quote}
-		\input{chap/abstract.tex}
-	\end{quote}
-	\vfill
-	
-	\input{chap/acknowledgments.tex}
-	\input{chap/introduction.tex}
-	\input{chap/diffusion_process.tex}
-	\input{chap/generative_ai.tex}
-	\input{glossaries/math_glossary.tex}
-	
-	%\setcounter{tocdepth}{3} % depth of ToC
-	\tableofcontents
-	\addtocontents{toc}{~\hfill{\fontfamily{phv}\selectfont Page}\par}
-	
-	\listoffigures
-	\listoftables
-	\lstlistoflistings
-	
-	\mainmatter % Hauptteil
-	
-	\input{chap/introduction}
-	
-	\appendix
-	
-	\backmatter
-	
-	\printbibliography[title=References]
-	\printbibliography[type=misc, title=Image Sources]
+
+\frontmatter
+
+%\includepdf{img/titlepage_black.pdf}
+\maketitle
+
+\chapter*{Abstract}
+\thispagestyle{empty}
+\vspace{-6cm}
+\vfill
+\begin{quote}
+	\input{chap/abstract.tex}
+\end{quote}
+\vfill
+
+%\setcounter{tocdepth}{3} % depth of ToC
+\tableofcontents
+\addtocontents{toc}{~\hfill{\fontfamily{phv}\selectfont Page}\par}
+
+\listoffigures
+\listoftables
+\lstlistoflistings
+
+\mainmatter
+\input{chap/acknowledgments.tex}
+\input{chap/introduction.tex}
+\input{chap/some_chapter.tex}
+\input{glossaries/math_glossary.tex}
+
+\backmatter
+
+\printbibliography[title=References]
+
+\appendix
+\input{appendix/appendix1.tex}
 
 \end{document}
